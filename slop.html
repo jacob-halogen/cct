@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
+  <title>Artifacts</title>
+  <link href="./bootstrap.min.css" rel="stylesheet" />
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #e1e1e0;
+      margin: 0;
+    }
+    .container {
+      max-width: 500px;
+      width: 100%;
+      margin: 32px;
+      padding: 16px;
+      background: #fff;
+      border-radius: 16px;
+      box-sizing: border-box;
+    }
+    .room-header {
+      text-align: center;
+      margin-bottom: 16px;
+    }
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+      gap: 16px;
+    }
+    .artifact-card {
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+    }
+    .artifact-card img {
+      width: 100%;
+      height: 140px;
+      object-fit: cover;
+      display: block;
+    }
+    .artifact-body {
+      padding: 12px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .artifact-title { font-weight: 600; margin: 0; font-size: 14px; }
+    .artifact-meta { font-size: 12px; color: #666; }
+      .artifact-card img { height: 120px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <h1 class="room-header">Artifacts</h1>
+
+    <section class="cards-grid" aria-label="Artifacts list">
+      <article class="card artifact-card" role="article" aria-labelledby="a1-title">
+        <img src="jug.jpg" />
+        <div class="artifact-body card-body">
+          <h2 id="a1-title" class="artifact-title"><a href="jug.html">Jug, 15th Century</a></h2>
+          <div class="artifact-meta">Derbyshire</div>
+        </div>
+      </article>
+
+      <article class="card artifact-card" role="article" aria-labelledby="a1-title">
+        <img src="leadtank.jpg"/>
+        <div class="artifact-body card-body">
+          <h2 id="a1-title" class="artifact-title"><a href="leadtank.html">Lead Tank, 4th Century</a></h2>
+          <div class="artifact-meta">Flawborough</div>
+        </div>
+      </article>
+
+      <article class="card artifact-card">
+        <img src="dodecahedron.jpg"/>
+        <div class="artifact-body card-body">
+          <h2 id="a1-title" class="artifact-title"><a href="dodecahedron.html">Dodecahedron</a></h2>
+          <div class="artifact-meta">Norton Disney</div>
+        </div>
+      </article>
+    </section>
+  </main>
+</body>
+</html>
+
